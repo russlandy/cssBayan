@@ -33,7 +33,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 
@@ -41,6 +41,10 @@ span {
     overflow: hidden;
     opacity: 0;
     transition: all linear .2s;
+}
+
+.icon {
+    width: 1.8rem;
 }
 
 
@@ -94,4 +98,36 @@ main:hover .container_open_icon {
 
 .button_cover:checked+.container_open_icon {
     rotate: 45deg;
+}
+
+@media (min-width: 820px) {
+
+    .title_header {
+        font-size: 2.4rem;
+    }
+    .container_title {
+        font-size: 1.2rem;
+    }
+
+    .container:hover .container_img {
+        width: 24rem;
+    }
+
+    .button_cover:checked+.container_img {
+        width: 24rem;
+    }
+
+    .icon {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container:hover .container_img {
+        width: 32rem;
+    }
+
+    .button_cover:checked+.container_img {
+        width: 32rem;
+    }
 }
