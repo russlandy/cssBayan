@@ -96,8 +96,12 @@ main:hover .container_open_icon {
     overflow: visible;
 }
 
-.button_cover:checked+.container_open_icon {
+.button_cover:checked+.icon {
     rotate: 45deg;
+}
+
+.button_cover:active+.container_img {
+    filter: opacity(60%);
 }
 
 @media (min-width: 820px) {
@@ -129,5 +133,13 @@ main:hover .container_open_icon {
 
     .button_cover:checked+.container_img {
         width: 32rem;
+    }
+
+    .title_header {
+        font-size: 2.6rem;
+    }
+
+    .container_title {
+        font-size: 1.4rem;
     }
 }
